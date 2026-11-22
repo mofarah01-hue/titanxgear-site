@@ -233,6 +233,8 @@ p { margin: 0; text-wrap: pretty; }
 /* Blanks Mo must fill, and draft notes, are meant to be impossible to miss before publishing. */
 mark.blank { background: var(--gold); color: var(--gold-ink); padding: 0 4px; border-radius: var(--radius); font-weight: 500; }
 mark.confirm { background: none; color: var(--gold); border-bottom: 1px dashed var(--gold); }
+.doc-status { display: inline-block; font-size: 14px; font-weight: 500; color: var(--gold); border: 1px solid var(--gold); border-radius: var(--radius); padding: 6px 10px; margin-bottom: 26px; }
+.doc-body .flag { display: block; margin: 0 0 18px; padding: 14px 16px; border-left: 3px solid var(--gold); background: rgba(255,212,0,.08); color: var(--chalk); font-size: 15px; line-height: 1.5; }
 .titleblock a { color: inherit; }
 
 /* ---------- Footer: title block ---------- */

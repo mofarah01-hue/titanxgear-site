@@ -65,6 +65,18 @@ cannot convert. Fill the blanks in the Markdown, rebuild, then upload `privacy/`
 Not used: `C:\dev\titanx-coach\docs\testflight\privacy-policy.md` is an older draft (2026-11-11, 73 lines,
 `MO_CONTACT_EMAIL`, says the app has no account or server).
 
+## Temporary public preview (GitHub Pages)
+
+Mo asked on 2026-11-22 for a public GitHub link to share, to be taken down once people have seen it.
+Repo `mofarah01-hue/titanxgear-site` (public), Pages from `master`. Every page carries
+`<meta name="robots" content="noindex">` so search engines skip it; remove that line from `index.html` and
+`tools/build-privacy.py` when the site moves to titanxgear.com. Take the preview down: repo Settings, Pages,
+Unpublish site (or make the repo private).
+
+Terms of use (`content/terms.md`, page `terms/`): written 2026-11-22 by Claude from common practice for training
+apps and a web search of comparable terms and Apple's HealthKit privacy rules. Not legal advice; blanks and
+"counsel to confirm" items are Mo's. Build: `python -I tools/build-privacy.py content/terms.md --out terms --page-title "Terms of use" --status "..."`.
+
 ## Deploy to Hostinger (after Mo says yes)
 
 **Found 2026-11-22:** titanxgear.com today is a different site, "Custom Sportswear for Teams - Titan X Apparel",
