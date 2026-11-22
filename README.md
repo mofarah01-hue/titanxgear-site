@@ -48,6 +48,23 @@ the browser until Mo picks a destination and the config is filled in. Options:
 | Supabase (the titanx-supabase project) | Table `waitlist` (email unique, role, created_at); RLS allows insert only, no select | Same place as future accounts; no extra service | Needs the project live and the table plus policy added |
 | Formspree | Paste the form endpoint into `CONFIG.formspree` | Five minutes, emails also land in an inbox | Third party holds the list; free tier limits |
 
+## Privacy policy page (/privacy)
+
+Needed as the hosted privacy URL for the Titan X app's TestFlight external review. Source: the app's
+`pack/docs/testflight/privacy-policy.md` (Titan X iOS repo on the Mac). Build:
+
+```powershell
+python -I tools/build-privacy.py C:\path\to\privacy-policy.md
+```
+
+It writes `privacy/index.html`, keeps Mo's blanks (`[legal entity]`, `[address]`, `[privacy email]`) highlighted
+in yellow and never fills them, underlines "to confirm" notes, prints counts of both, and stops on Markdown it
+cannot convert. Fill the blanks in the Markdown, rebuild, then upload `privacy/` with the rest. The URL is
+`https://titanxgear.com/privacy/` (the server also answers `/privacy` with a redirect to it).
+
+Not used: `C:\dev\titanx-coach\docs\testflight\privacy-policy.md` is an older draft (2026-11-11, 73 lines,
+`MO_CONTACT_EMAIL`, says the app has no account or server).
+
 ## Deploy to Hostinger (after Mo says yes)
 
 **Found 2026-11-22:** titanxgear.com today is a different site, "Custom Sportswear for Teams - Titan X Apparel",
@@ -61,7 +78,7 @@ Steps for whoever holds the Hostinger login (Claude never signs in):
 2. Websites → Add website → choose titanxgear.com (or a subdomain, e.g. `soon.titanxgear.com`, to keep the store) →
    "Empty website" / custom PHP-HTML.
 3. Files → File Manager → `public_html` → upload `index.html`, `styles.css`, `main.js`, `waitlist.js`, `.htaccess`,
-   and the folders `img/` and `fonts/`. Do not upload `source-img/`, `tools/`, `screens/`.
+   and the folders `img/`, `fonts/` and `privacy/`. Do not upload `source-img/`, `tools/`, `screens/`.
 4. If the domain is still tied to the Website Builder site, disconnect it there first (Website Builder →
    Settings → Domain). Back up or keep the builder site; nothing has to be deleted.
 5. Security → SSL: make sure the certificate is active, then open https://titanxgear.com and check the form shows the
