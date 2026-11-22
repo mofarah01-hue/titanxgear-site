@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Titan X | Coming soon</title>
+<meta name="description" content="Titan X puts every wrestler's heart rate and head contacts on one screen during practice, so the coach can act while it is still happening. Coming soon.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://titanxgear.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://titanxgear.com/">
+<meta property="og:title" content="Titan X | Coming soon">
+<meta property="og:description" content="Heart rate and head contacts for every wrestler, live, on the coach's screen. Coming soon.">
+<meta property="og:image" content="https://titanxgear.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/logo-180.png">
+<link rel="preload" href="fonts/fraunces-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="img/deck-hero-1600.webp" imagesrcset="img/deck-hero-960.webp 960w, img/deck-hero-1600.webp 1600w, img/deck-hero-2425.webp 2425w" imagesizes="100vw">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
+<script src="waitlist.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#waitlist">Skip to the waitlist</a>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Titan X, back to top">
+    <img src="img/logo-240.webp" srcset="img/logo-240.webp 1x, img/logo-480.webp 2x" width="120" height="34" alt="Titan X">
+  </a>
+  <a class="top-cta" href="#waitlist">Join the waitlist</a>
+</header>
+
+<main id="top">
+
+  <!-- Hero: the photo carries it; the headline is the deck's own cover line. -->
+  <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero-photo">
+      <img src="img/deck-hero-1600.webp"
+           srcset="img/deck-hero-960.webp 960w, img/deck-hero-1600.webp 1600w, img/deck-hero-2425.webp 2425w"
+           sizes="100vw" width="2425" height="1366"
+           alt="A wrestler from behind, wearing dark headgear with small green lights, in a practice room.">
+    </picture>
+    <div class="hero-copy">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Coming soon. Built for wrestling first.</p>
+      <h1 id="hero-title">The hardest work in the room is the part nobody can see.</h1>
+      <p class="lede">Titan X puts every wrestler's heart rate and head contacts on one screen during practice, so the coach can act while it is still happening.</p>
+      <form class="wl wl-inline" data-waitlist novalidate>
+        <label class="sr" for="hero-email">Email address</label>
+        <input id="hero-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@club.com" required>
+        <button type="submit">Join the waitlist</button>
+        <p class="wl-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <p class="fig hero-fig"><span class="fig-n">Fig. 1</span> Concept headgear, from the Titan X pitch deck.</p>
+  </section>
+
+  <!-- The problem, in the deck's words. -->
+  <section class="problem" aria-label="The problem">
+    <p class="margin-note">The room</p>
+    <p class="statement">One coach. Thirty athletes. Thirty different physiological states, and no way to see any of them.</p>
+  </section>
+
+  <!-- How a practice runs: a real sequence, so it is numbered. The bar fills as you scroll. -->
+  <section class="practice" aria-labelledby="practice-title">
+    <div class="practice-head">
+      <p class="margin-note">The app</p>
+      <h2 id="practice-title">A practice, from plan to the season.</h2>
+    </div>
+
+    <ol class="blockbar" aria-hidden="true">
+      <li data-for="s-plan" data-label="Before"><span>Before</span></li>
+      <li data-for="s-floor" data-label="During"><span>During</span></li>
+      <li data-for="s-after" data-label="After"><span>After</span></li>
+      <li data-for="s-season" data-label="Season"><span>Season</span></li>
+      <li data-for="s-ask" data-label="Any time"><span>Any time</span></li>
+    </ol>
+
+    <ol class="steps">
+      <li class="step" id="s-plan">
+        <div class="step-text">
+          <p class="step-n">1 Before practice</p>
+          <h3>Build the plan.</h3>
+          <p>Break practice into blocks and give each one a target heart rate zone: an easy warm-up, hard live rounds. A change for one athlete, like drilling instead of live wrestling on a sore shoulder, stays with that athlete.</p>
+        </div>
+        <figure class="step-fig phone">
+          <img src="img/app-plan-480.webp" srcset="img/app-plan-480.webp 480w, img/app-plan-900.webp 900w" sizes="(min-width: 900px) 300px, 62vw" width="900" height="1880" loading="lazy" alt="Phone screen: a wrestling practice split into warm-up, technique, drill, live wrestling and cool-down, each with a target zone.">
+          <figcaption class="fig"><span class="fig-n">Fig. 2</span> Plan. Every block shows its target in words and colour.</figcaption>
+        </figure>
+      </li>
+
+      <li class="step step-wide" id="s-floor">
+        <div class="step-text">
+          <p class="step-n">2 During practice</p>
+          <h3>Run the floor.</h3>
+          <p>Every athlete on one screen: heart rate as a share of their max, the target for this block, and whether they are on it, in words as well as colour. Head contacts are counted as they happen. One tap pulls an athlete out.</p>
+        </div>
+        <figure class="step-fig tablet">
+          <img src="img/app-floor-1000.webp" srcset="img/app-floor-560.webp 560w, img/app-floor-1000.webp 1000w, img/app-floor-1600.webp 1600w" sizes="(min-width: 1200px) 860px, 92vw" width="1600" height="1135" loading="lazy" alt="iPad screen during live round 3 of 5: twelve athlete tiles, each with heart rate percentage, beats per minute, a target status and a head contact count.">
+          <figcaption class="fig"><span class="fig-n">Fig. 3</span> Floor, on iPad, live round 3 of 5.</figcaption>
+        </figure>
+      </li>
+
+      <li class="step" id="s-after">
+        <div class="step-text">
+          <p class="step-n">3 After practice</p>
+          <h3>See what happened.</h3>
+          <p>Time on target for each athlete, who is worth a word, and head contacts by round. Add your call on tonight and a voice note, and it is saved.</p>
+        </div>
+        <figure class="step-fig phone-pair">
+          <img src="img/app-after-480.webp" srcset="img/app-after-480.webp 480w, img/app-after-900.webp 900w" sizes="(min-width: 900px) 520px, 92vw" width="900" height="910" loading="lazy" alt="Two phone screens: a practice summary with attendance and time on target, and one athlete's plan as it ran with head contacts by round.">
+          <figcaption class="fig"><span class="fig-n">Fig. 4</span> Practice saved, and one athlete's night.</figcaption>
+        </figure>
+      </li>
+
+      <li class="step" id="s-season">
+        <div class="step-text">
+          <p class="step-n">4 Over the season</p>
+          <h3>Watch the trend, not the noise.</h3>
+          <p>Each athlete is compared with their own usual range. When heart rate starts dropping faster after a live round, the change is shown against that range, so a real improvement stands out.</p>
+        </div>
+        <figure class="step-fig phone-trio">
+          <img src="img/app-progress-900.webp" srcset="img/app-progress-480.webp 480w, img/app-progress-900.webp 900w" sizes="(min-width: 900px) 600px, 92vw" width="900" height="602" loading="lazy" alt="Three phone screens: the athlete list sorted by cleared status, and one athlete's progress chart of heart rate recovery against her usual range.">
+          <figcaption class="fig"><span class="fig-n">Fig. 5</span> Athletes and progress, dark and light.</figcaption>
+        </figure>
+      </li>
+
+      <li class="step" id="s-ask">
+        <div class="step-text">
+          <p class="step-n">5 Any time</p>
+          <h3>Ask in plain words.</h3>
+          <p>Who can go hard tonight? Write me a practice for Thursday. The assistant answers from your own athletes and plans, gives the reason for each one it leaves out, and nothing changes until you tap Apply.</p>
+        </div>
+        <figure class="step-fig phone">
+          <img src="img/app-assistant-480.webp" srcset="img/app-assistant-480.webp 480w, img/app-assistant-900.webp 900w" sizes="(min-width: 900px) 300px, 62vw" width="900" height="1877" loading="lazy" alt="Phone screen: a coach asks who can do hard sparring tonight; the assistant lists who cannot and why, then proposes moving one athlete to drilling with Apply and Not now buttons.">
+          <figcaption class="fig"><span class="fig-n">Fig. 6</span> Assistant. Suggestions wait for the coach.</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <p class="fig fig-note">Screens are from the Titan X app design, with made-up athletes.</p>
+  </section>
+
+  <!-- Hardware -->
+  <section class="gear" aria-labelledby="gear-title">
+    <p class="margin-note">The sensor</p>
+    <div class="gear-text">
+      <h2 id="gear-title">The best sensor is the one the athlete doesn't have to remember.</h2>
+      <p>Headgear is on in every wrestling practice, because the sport requires it. A sensor inside it reads the heart signal and head motion from the same spot, so one device gives heart rate and head contacts.</p>
+      <dl class="spec">
+        <div><dt>Heart rate</dt><dd>Optical, from the head.</dd></div>
+        <div><dt>Head contacts</dt><dd>Counted from motion, per round and per practice.</dd></div>
+        <div><dt>Other sensors</dt><dd>Athletes can also wear a Polar heart rate sensor.</dd></div>
+      </dl>
+    </div>
+    <figure class="gear-fig">
+      <img src="img/deck-headgear-1091.webp" srcset="img/deck-headgear-600.webp 600w, img/deck-headgear-1091.webp 1091w" sizes="(min-width: 900px) 520px, 92vw" width="1091" height="1021" loading="lazy" alt="Render of black wrestling headgear marked Titan X, with a round sensor window and green lights over the ear.">
+      <figcaption class="fig"><span class="fig-n">Fig. 7</span> Concept headgear, from the pitch deck. The final design may differ.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Plain statement of what it is and is not (deck wording plus D26). -->
+  <section class="care" aria-label="What Titan X is and is not">
+    <p class="margin-note">Plainly</p>
+    <p>Titan X flags exposure and recommends evaluation. Only a qualified professional diagnoses a concussion. Titan X is a wellness device, not a medical device.</p>
+  </section>
+
+  <!-- Waitlist -->
+  <section class="join" id="waitlist" aria-labelledby="join-title">
+    <p class="margin-note">Waitlist</p>
+    <div class="join-body">
+      <h2 id="join-title">Get Titan X first.</h2>
+      <p>Leave your email and we will write when Titan X is ready for your room. No newsletter, one email when it matters.</p>
+      <form class="wl wl-full" data-waitlist novalidate>
+        <fieldset class="roles">
+          <legend>I am a</legend>
+          <label><input type="radio" name="role" value="coach" checked> Coach</label>
+          <label><input type="radio" name="role" value="athlete"> Athlete</label>
+          <label><input type="radio" name="role" value="parent"> Parent</label>
+          <label><input type="radio" name="role" value="other"> Other</label>
+        </fieldset>
+        <div class="wl-row">
+          <label class="sr" for="join-email">Email address</label>
+          <input id="join-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@club.com" required>
+          <button type="submit">Join the waitlist</button>
+        </div>
+        <p class="wl-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer drawn as a title block, the way Mo closes his own sites. -->
+<footer class="titleblock">
+  <div class="tb-cell tb-name">
+    <img src="img/logo-240.webp" width="120" height="34" alt="Titan X" loading="lazy">
+    <p>Let's build the standard combat sports deserves.</p>
+  </div>
+  <div class="tb-cell"><span class="tb-k">Status</span><span class="tb-v">Coming soon</span></div>
+  <div class="tb-cell"><span class="tb-k">First sport</span><span class="tb-v">Wrestling</span></div>
+  <div class="tb-cell"><span class="tb-k">Made by</span><span class="tb-v">Titan X</span></div>
+  <div class="tb-cell"><span class="tb-k">Year</span><span class="tb-v">&copy; 2026</span></div>
+</footer>
+
+</body>
+</html>
